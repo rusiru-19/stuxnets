@@ -1,0 +1,109 @@
+body {
+  background-color: black;
+}
+
+.column {
+    float: left;
+    width: 22%;
+    margin-bottom: 16px;
+    padding: 0 16px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+.button:hover {
+    background-color: #555;
+}
+.button2{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #660000ab;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button2:hover {
+    background-color: #480000ab;
+}
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Serif Bold Italic'), url('https://fonts.gstatic.com/s/notoserif/v8/ga6Vaw1J5X9T9RW6j9bNfFIu0RWufOVMCoY.woff2') format('woff2');
+}
+
+
+
+h1 {
+    font-family: 'Noto Serif';
+    color: gray;
+    text-align: center;
+    font-size: 25px;
+}
+h2 {
+    font-family: 'Noto Serif';
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+
+p {
+    font-family: 'Noto Serif';
+    color: #2f2f2f;
+}
+
+h3 {
+    color: #2f2f2f;
+}
+
+
+
+td, th {
+    font-family: 'Noto Serif';
+    border: 1px solid #2f2f2f;
+    ; text-align: left;
+    padding: 8px;
+}
+
